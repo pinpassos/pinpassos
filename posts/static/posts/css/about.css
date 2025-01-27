@@ -1,0 +1,32 @@
+#about-section {
+    min-height: 380px;
+    margin: 2rem 0;
+    border-bottom: 1px solid #e1e1e8;
+}
+
+.about-section__title__span {
+    background: linear-gradient(180deg, #9895ff 0%, #514dcc 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-section__subtitle {
+    max-width: 620px;
+    color: #696981;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-section__title__h1 {
+        font-size: 32px;
+    }
+
+    .about-section__subtitle {
+        width: 90%;
+    }
+
+    .about-section__subtitle__text {
+        font-size: 12px;
+    }
+
+}

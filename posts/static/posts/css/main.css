@@ -1,0 +1,126 @@
+#main-section {
+    margin: 4rem 0;
+    column-gap: 1rem;
+}
+
+/* Main section posts */
+.main-section__content__texts {
+    text-align: justify;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.main-section__content__texts__write__title__h2 {
+    color: #514dcc;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-section__content__texts__write__body {
+    max-width: 95%;
+}
+
+.main-section__content__texts__write__body>div, .main-section__content__texts__write__body__p {
+    color: #696981;
+}
+
+.main-section__content__texts>div {
+    column-gap: 20px;
+}
+
+.main-section__content__texts__image>img {
+    border-radius: 10px;
+}
+
+.main-section__content__texts__write__body__read_more {
+    color: #514dcc;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Main section about me */
+.main-section__about {
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    max-height: max-content;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+    max-width: 360px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main-section__about__posts_text {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.main-section__about__posts_text__title>h2 {
+    text-transform: uppercase;
+    color: #696981;
+    font-size: 12px;
+}
+
+.main-section__about__posts_text__description__name {
+    color: #29294b;
+    font-weight: 800;
+}
+
+.main-section__about__posts_text__description__attribute {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #514dcc;
+}
+
+.main-section__about__posts_text__description__text {
+    text-align: justify;
+    line-height: 1.5;
+    color: #696981;
+}
+
+.page-link {
+    background-color: #514dcc;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.page-link:hover {
+    background-color: #ffffff;
+    color: #514dcc;
+    font-weight: bold;
+}
+
+.active>.page-link, .page-link.active {
+    background-color: #ffffff;
+    color: #514dcc;
+    font-weight: bold;
+    border: 1px solid #696981;
+  }
+
+
+@media only screen and (max-width: 600px) {
+
+    #main-section {
+        row-gap: 20px;
+        max-width: 360px;
+    }
+
+    .main-section__content__texts__write {
+        max-width: 100%;
+    }
+
+    .main-section__about {
+        position: relative;
+        top: 0;
+    }
+
+}

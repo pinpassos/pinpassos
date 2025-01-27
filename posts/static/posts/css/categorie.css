@@ -1,0 +1,32 @@
+#categorie-section {
+    margin: 4rem 0;
+}
+
+.categorie-section__list {
+    gap: 15px;
+    max-width: 820px;
+}
+
+.categorie-section__title {
+    color: #a3a3b6;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.categorie-section__item {
+    padding: .75rem 1.25rem .75rem 1.125rem;
+    transition: .25s;
+    border-radius: 100px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #9895ff 0%, #514dcc 100%);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .categorie-section__list {
+        max-width: 80%;
+    }
+}

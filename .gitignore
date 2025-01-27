@@ -88,3 +88,5 @@ local_settings.py
 .env
 .virtualenv
 db.sqlite3
+
+.requirements.txt

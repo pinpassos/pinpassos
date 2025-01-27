@@ -1,0 +1,17 @@
+<section id="categorie-section" class="col-12 d-flex flex-column align-items-center justify-content-center">
+    <h2 class="mb-3 categorie-section__title">Explore por categoria</h2>
+    <div class="categorie-section__list d-flex flex-md-row justify-content-center flex-wrap">
+        <a href="{% url 'index' %}">
+            <div class="categorie-section__item d-flex justify-content-center align-items-center">
+                <p class="m-0">Todos</p>
+            </div>
+        </a>
+        {% for categorie in categories %}
+        <a href="{% url 'index_with_category' categorie.id %}">
+            <div class="categorie-section__item d-flex justify-content-center align-items-center">
+                <p class="m-0">{{ categorie.name }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
