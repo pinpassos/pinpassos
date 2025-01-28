@@ -7,6 +7,10 @@
     max-width: 820px;
 }
 
+.categorie-section__list > a {
+    text-decoration: none;
+}
+
 .categorie-section__title {
     color: #a3a3b6;
     font-size: 12px;

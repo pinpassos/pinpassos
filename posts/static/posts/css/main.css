@@ -12,6 +12,11 @@
     padding: 20px;
 }
 
+.main-section__content__texts__image > img {
+    max-width: 90%;
+    max-block-size: 90%;
+}
+
 .main-section__content__texts__write__title__h2 {
     color: #514dcc;
     text-transform: uppercase;
@@ -114,6 +119,11 @@
         max-width: 360px;
     }
 
+    .main-section__content__texts__image > img {
+        max-width: 100%;
+        max-block-size: 100%;
+    }
+
     .main-section__content__texts__write {
         max-width: 100%;
     }
@@ -122,5 +132,10 @@
         position: relative;
         top: 0;
     }
+
+    .main-section__content__empty_posts {
+        text-align: center;
+    }
+
 
 }
