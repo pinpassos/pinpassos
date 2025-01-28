@@ -13,3 +13,19 @@ $('.main-section__content__texts__write__body__read_more').on('click', function 
         read_more.attr('aria-expanded', false)
     }
 });
+
+$('.categorie-section__list a, ul.pagination').on('click', event => {
+    sessionStorage.setItem('scrollToSection', true);
+});
+
+$(document).ready(function () {
+    if (sessionStorage.getItem('scrollToSection')) {
+        sessionStorage.removeItem('scrollToSection');
+        
+        let currentTarget = $(window).width() >= 600 ? $('#main-section') : $('.main-section__content')
+        $('html, body').animate({
+            scrollTop: currentTarget.offset().top
+        }, 900);
+
+    }
+});
