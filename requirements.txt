@@ -1,11 +1,16 @@
 asgiref==3.8.1
 bleach==6.2.0
+dj-database-url==2.3.0
 Django==5.1.5
 django-js-asset==3.0.1
 django-prose==2.1.0
+gunicorn==23.0.0
+packaging==24.2
 pillow==11.1.0
 psycopg2==2.9.10
 psycopg2-binary==2.9.10
 python-dotenv==1.0.1
 sqlparse==0.5.3
+typing_extensions==4.12.2
 webencodings==0.5.1
+whitenoise==6.8.2
