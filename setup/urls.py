@@ -21,6 +21,13 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('posts/', include('posts.urls')),
+    path('', include('posts.urls')),
     path('prose/', include('prose.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+
+# Serve arquivos estáticos no ambiente de desenvolvimento
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Serve arquivos de mídia
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
