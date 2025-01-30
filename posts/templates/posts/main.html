@@ -15,7 +15,7 @@
                         <h2 class="main-section__content__texts__write__title__h2 text-center text-md-start">{{ post.title }}</h2>
                     </div>
                     <div class="main-section__content__texts__write__body">
-                        <p class="main-section__content__texts__write__body__p">{{post.body.content|safe}}</p>
+                        <p class="main-section__content__texts__write__body__p">{{post.summary}}</p>
                         <div id="collapse-content-{{post.id}}" class="main-section__content__texts__write__body collapse">
                             <p class="main-section__content__texts__write__body__p">{{post.body.content|safe}}</p>
                         </div>
