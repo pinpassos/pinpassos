@@ -8,6 +8,7 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+      - media_volume:/app/media
     environment:
       - DEBUG=${DEBUG}
       - DJANGO_SETTINGS_MODULE=setup.settings
